@@ -3,54 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mahesh Singh Madai">
     <title>Mahesh Singh Madai | Experience</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<nav class="navbar">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="home.html">MAHESH</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-link"><a href="experience.html" class="text-decoration-none text-light">Experience</a></li>
-                <li class="nav-link"><a href="projects.html" class="text-decoration-none text-light">Projects</a></li>
-                <li class="nav-link"><a href="skills.html" class="text-decoration-none text-light">Skills</a></li>
-            </ul>
+        <a href="home.html" class="navbar-brand">MAHESH</a>
+        <div class="navbar-nav">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="skills.html" class="nav-link">Skills</a>
         </div>
     </div>
 </nav>
 
-<section class="container py-5">
-    <h2 class="section-title">Work Experience</h2>
-    <div class="mb-4">
-        <h4 class="text-primary">Business Intelligence Developer | Agile Solutions</h4>
-        <p class="text-muted">04/2024 - 11/2025</p>
-        <ul>
-            <li>Developed ETL pipelines using SSIS and SQL Server.</li>
-            <li>Deployed SSAS cubes for self-service analytics.</li>
-            <li>Built Power BI dashboards for Gorkha Brewery and Global IME Bank.</li>
-        </ul>
-    </div>
-    <div class="mb-4">
-        <h4 class="text-primary">.NET Developer | Agile Solutions</h4>
-        <p class="text-muted">08/2023 - 03/2024</p>
-        <ul>
-            <li>Built HRMS portals for 1500+ employees.</li>
-            <li>Developed Dealer Management Systems for Triveni Group.</li>
-        </ul>
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="job-card">
+            <div class="job-top">
+                <div class="job-title">
+                    <span>Business Intelligence Developer</span>
+                    <span class="dot">•</span>
+                    <span class="company">Agile Solutions</span>
+                </div>
+            </div>
+            <div class="job-meta">
+                <i class="fa fa-calendar"></i> 04/2024 - 11/2025
+            </div>
+            <div class="job-tags">
+                <span class="tag">SSIS</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">SSAS</span>
+                <span class="tag">SQL Server</span>
+            </div>
+            <ul style="margin-left: 16px; color: rgba(234, 246, 247, 0.85);">
+                <li>Developed ETL pipelines using SSIS and SQL Server for large-scale data processing</li>
+                <li>Deployed SSAS cubes for enterprise self-service analytics and OLAP functionality</li>
+                <li>Built Power BI dashboards for Gorkha Brewery and Global IME Bank, enabling data-driven decisions</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <div class="job-top">
+                <div class="job-title">
+                    <span>.NET Developer</span>
+                    <span class="dot">•</span>
+                    <span class="company">Agile Solutions</span>
+                </div>
+            </div>
+            <div class="job-meta">
+                <i class="fa fa-calendar"></i> 08/2023 - 03/2024
+            </div>
+            <div class="job-tags">
+                <span class="tag">.NET</span>
+                <span class="tag">C#</span>
+                <span class="tag">HRMS</span>
+                <span class="tag">Database Design</span>
+            </div>
+            <ul style="margin-left: 16px; color: rgba(234, 246, 247, 0.85);">
+                <li>Built enterprise HRMS portals serving 1500+ employees with .NET and C#</li>
+                <li>Developed Dealer Management Systems for Triveni Group with complex business logic</li>
+                <li>Designed and implemented scalable database schemas for enterprise systems</li>
+            </ul>
+        </div>
+
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Mahesh Singh Madai | Kathmandu, Nepal</p>
+    <div class="container footer-icons">
+        <a href="https://linkedin.com/in/maheshsinghmadai" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
+        <a href="mailto:maheshsinghmadai@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="container">
+        <p><small>&copy; 2026 Mahesh Singh Madai</small></p>
+    </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

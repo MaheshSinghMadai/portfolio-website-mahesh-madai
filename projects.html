@@ -3,60 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mahesh Singh Madai">
     <title>Mahesh Singh Madai | Projects</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<nav class="navbar">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="home.html">MAHESH</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-link"><a href="experience.html" class="text-decoration-none text-light">Experience</a></li>
-                <li class="nav-link"><a href="projects.html" class="text-decoration-none text-light">Projects</a></li>
-                <li class="nav-link"><a href="skills.html" class="text-decoration-none text-light">Skills</a></li>
-            </ul>
+        <a href="home.html" class="navbar-brand">MAHESH</a>
+        <div class="navbar-nav">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="experience.html" class="nav-link">Experience</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="skills.html" class="nav-link">Skills</a>
         </div>
     </div>
 </nav>
 
-<section class="container py-5">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100 p-3">
-                <h5>CDC Chronic Disease Analysis</h5>
-                <p class="small text-muted">Spark, Power BI, DAX</p>
-                <p>Engineered an Apache Spark ETL pipeline for multi-year trend analysis.</p>
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="proj-grid">
+            <div class="proj-card">
+                <div class="proj-meta">
+                    <div class="proj-cat">DATA ENGINEERING</div>
+                    <div class="proj-date">2024</div>
+                </div>
+                <div class="proj-body">
+                    <h5 class="proj-title">CDC Chronic Disease Analysis</h5>
+                    <p class="proj-desc">
+                        Engineered an Apache Spark ETL pipeline for analyzing multi-year CDC chronic disease trends with Power BI dashboards for visualization.
+                    </p>
+                    <p style="font-size: 12px; color: rgba(234, 246, 27, 0.92); margin-bottom: 10px;">
+                        <strong>Tech:</strong> Spark, Power BI, DAX, Python
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 p-3">
-                <h5>EEG Signal Processing</h5>
-                <p class="small text-muted">Python, Deep Learning, CNN</p>
-                <p>Motor imagery and epilepsy classification using ID-CNN and BiGRU.</p>
+
+            <div class="proj-card">
+                <div class="proj-meta">
+                    <div class="proj-cat">MACHINE LEARNING</div>
+                    <div class="proj-date">2023</div>
+                </div>
+                <div class="proj-body">
+                    <h5 class="proj-title">EEG Signal Processing</h5>
+                    <p class="proj-desc">
+                        Motor imagery and epilepsy classification using advanced deep learning with ID-CNN and BiGRU architectures for medical signal analysis.
+                    </p>
+                    <p style="font-size: 12px; color: rgba(234, 246, 27, 0.92); margin-bottom: 10px;">
+                        <strong>Tech:</strong> Python, Deep Learning, CNN, TensorFlow
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 p-3">
-                <h5>Inventory Optimization</h5>
-                <p class="small text-muted">XGBoost, ARIMA, Streamlit</p>
-                <p>Demand forecasting system using Rossmann Store Sales dataset.</p>
+
+            <div class="proj-card">
+                <div class="proj-meta">
+                    <div class="proj-cat">FORECASTING</div>
+                    <div class="proj-date">2023</div>
+                </div>
+                <div class="proj-body">
+                    <h5 class="proj-title">Inventory Optimization</h5>
+                    <p class="proj-desc">
+                        Demand forecasting system using XGBoost and ARIMA for inventory management with Streamlit web interface for visualization.
+                    </p>
+                    <p style="font-size: 12px; color: rgba(234, 246, 27, 0.92); margin-bottom: 10px;">
+                        <strong>Tech:</strong> XGBoost, ARIMA, Streamlit, Pandas
+                    </p>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-meta">
+                    <div class="proj-cat">BI DEVELOPMENT</div>
+                    <div class="proj-date">2024</div>
+                </div>
+                <div class="proj-body">
+                    <h5 class="proj-title">Power BI Analytics Dashboard</h5>
+                    <p class="proj-desc">
+                        Enterprise analytics dashboard built for financial services company with real-time data refresh, complex DAX calculations, and interactive reports.
+                    </p>
+                    <p style="font-size: 12px; color: rgba(234, 246, 27, 0.92); margin-bottom: 10px;">
+                        <strong>Tech:</strong> Power BI, SQL Server, DAX, SSAS
+                    </p>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-meta">
+                    <div class="proj-cat">ETL / DATABASES</div>
+                    <div class="proj-date">2024</div>
+                </div>
+                <div class="proj-body">
+                    <h5 class="proj-title">Enterprise Data Warehouse</h5>
+                    <p class="proj-desc">
+                        Designed and implemented enterprise data warehouse using SQL Server with SSIS ETL pipelines for multi-source data integration and cleansing.
+                    </p>
+                    <p style="font-size: 12px; color: rgba(234, 246, 27, 0.92); margin-bottom: 10px;">
+                        <strong>Tech:</strong> SQL Server, SSIS, SSAS, T-SQL
+                    </p>
+                </div>
+            </div>
+
+            <div class="proj-card">
+                <div class="proj-meta">
+                    <div class="proj-cat">.NET DEVELOPMENT</div>
+                    <div class="proj-date">2024</div>
+                </div>
+                <div class="proj-body">
+                    <h5 class="proj-title">HRMS Portal</h5>
+                    <p class="proj-desc">
+                        Full-stack HRMS portal serving 1500+ employees with employee management, payroll integration, and self-service features built with .NET and C#.
+                    </p>
+                    <p style="font-size: 12px; color: rgba(234, 246, 27, 0.92); margin-bottom: 10px;">
+                        <strong>Tech:</strong> .NET, C#, SQL Server, REST APIs
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 Mahesh Singh Madai | Kathmandu, Nepal</p>
+    <div class="container footer-icons">
+        <a href="https://linkedin.com/in/maheshsinghmadai" target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub"><i class="fa fa-github"></i></a>
+        <a href="mailto:maheshsinghmadai@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="container">
+        <p><small>&copy; 2026 Mahesh Singh Madai</small></p>
+    </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

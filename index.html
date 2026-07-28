@@ -1,97 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mahesh Singh Madai">
-    <meta name="description" content="Mahesh Singh Madai — BI Developer & .NET Expert. ETL pipelines, Power BI dashboards, and enterprise data solutions.">
-    <title>Mahesh Singh Madai | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description"
+        content="Mahesh Singh Madai — Business Intelligence Developer & Data Analyst. SSIS ETL pipelines, SSAS OLAP cubes, Power BI DAX dashboards, SQL Server, and ML data solutions.">
+    <meta name="keywords"
+        content="Data Analyst, BI Developer, Power BI, SSIS, SSAS, OLAP, SQL Server, Apache Spark, Python, Data Engineering, Mahesh Singh Madai">
+    <title>Mahesh Singh Madai | Data Analyst & BI Developer Portfolio</title>
+
+    <!-- Font Awesome 6 Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
-<header class="hero">
-    <div class="container hero-inner">
-        <div class="hero-left">
-            <h1>Mahesh Singh Madai</h1>
-            <div class="profile-meta">
-                <div class="meta-location">
-                    <i class="fa fa-briefcase"></i>
-                    Business Intelligence Developer
-                </div>
-                <div class="meta-location">
-                    <i class="fa fa-map-marker"></i>
-                    Kathmandu, Nepal
-                </div>              
-            </div>
-
-            <div class="resume-row">
-                <a class="btn primary" href="mailto:maheshsinghmadai@gmail.com" >
-                    <i class="fa fa-envelope" style="color:white"></i> Contact Me
-                </a>
-            </div>
-
-            <div class="social-row">
-                <a href="https://linkedin.com/in/maheshsinghmadai" target="_blank" aria-label="LinkedIn">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/yourgithub" target="_blank" aria-label="GitHub">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a href="mailto:maheshsinghmadai@gmail.com" aria-label="Email">
-                    <i class="fa fa-envelope"></i>
-                </a>
-            </div>
+    <!-- Side Navigation Scroll Dots -->
+    <div class="scroll-nav-dots" id="scroll-dots">
+        <div class="scroll-dot active" data-target="section-hero">
+            <span class="tooltip">Home Hero</span>
+        </div>
+        <div class="scroll-dot" data-target="section-about">
+            <span class="tooltip">Executive Summary</span>
+        </div>
+        <div class="scroll-dot" data-target="section-projects">
+            <span class="tooltip">Featured Projects</span>
+        </div>
+        <div class="scroll-dot" data-target="section-footer">
+            <span class="tooltip">Contact & Links</span>
         </div>
     </div>
-</header>
 
-<section class="section">
-    <div class="container">
-        <div class="section-head">
-            <h2>About Me</h2>
-        </div>
-        <div class="card about-pro">
-            <img src="iamge.jpg" alt="Profile Photo" class="about-pro-photo">
-            <div class="about-pro-right">
-                <div class="about-meta">
-                    <div class="meta-toggle">
-                        <span class="meta-item">
-                            <i class="fa fa-map-marker"></i>Kathmandu, Nepal
-                        </span>
-                     
+    <!-- Full Page Snap Container -->
+    <div class="snap-container" id="snap-container">
+
+        <!-- SECTION 1: HERO -->
+        <header class="hero snap-section" id="section-hero">
+            <div class="container hero-inner">
+                <div class="hero-left">
+
+                    <h1 class="hero-title">
+                        Transforming Raw Data Into <span class="gradient-text">Enterprise Intelligence</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Business Intelligence Developer & Data Analyst with <strong>2.5+ years of experience</strong>
+                        engineering end-to-end SSIS/Spark ETL pipelines, SSAS OLAP multidimensional cubes, and
+                        interactive
+                        Power BI DAX dashboards for enterprise organizations including Carlsberg Nepal (Gorkha Brewery)
+                        and
+                        CAAN.
+                    </p>
+
+                    <div class="hero-meta">
+                        <div class="meta-pill">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span>BI & Data Engineering</span>
+                        </div>
+                        <div class="meta-pill">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Kathmandu, Nepal</span>
+                        </div>
+                        <div class="meta-pill">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>M. Sc. CSIT Candidate</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="projects.html">
+                            <i class="fa-solid fa-chart-pie"></i> View Key Projects
+                        </a>
+                        <a class="btn btn-secondary" href="experience.html">
+                            <i class="fa-solid fa-timeline"></i> Work Experience
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/maheshsinghmadai" target="_blank" aria-label="LinkedIn"
+                            class="social-btn" title="LinkedIn Profile">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/maheshsinghmadai" target="_blank" aria-label="GitHub"
+                            class="social-btn" title="GitHub Repository">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:maheshsinghmadai@gmail.com" aria-label="Email" class="social-btn"
+                            title="Send Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+9779860485061" aria-label="Phone" class="social-btn" title="Call Mahesh">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
                     </div>
                 </div>
-                <ul class="subtitle custom-list">
-                    <li>
-                        Business Intelligence Developer & .NET Expert with <strong>2.5+ years of professional experience</strong> in data engineering and enterprise solutions
-                    </li>
-                    <li>
-                        Specialized in <strong>ETL pipelines, SSIS, and SQL Server</strong> for enterprise data management and SQL-based ETL pipelines
-                    </li>
-                    <li>
-                        Built <strong>Power BI dashboards</strong> for major organizations including Gorkha Brewery and Global IME Bank
-                    </li>
-                    <li>
-                        Developed <strong>HRMS portals</strong> and enterprise systems serving 1500+ employees using .NET and ASP.NET
-                    </li>
-                    <li>
-                        Proficient in <strong>SSAS cubes, SSRS reports, and data warehousing</strong> solutions for decision-making
-                    </li>
-                    <li>
-                        Research interests in <strong>Machine Learning and Advanced Data Analytics</strong> with Python and Spark
-                    </li>
-                </ul>
+
+                <div class="hero-right">
+                    <div class="hero-profile-card">
+                        <div class="profile-img-wrap">
+                            <img src="iamge.jpg" alt="Mahesh Singh Madai - Data Analyst & BI Developer"
+                                class="profile-img">
+                        </div>
+                        <div class="profile-glass-badge">
+                            <div class="badge-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div class="badge-text">
+                                <h4>Mahesh Singh Madai</h4>
+                                <p>Data Analyst / BI Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
+
+        <!-- SECTION 3: ABOUT & CORE COMPETENCIES -->
+        <section class="section snap-section" id="section-about">
+            <div class="container">
+                <div class="section-head">
+                    <div class="section-tag"><i class="fa-solid fa-user"></i> Executive Summary</div>
+                    <h2 class="section-title">Bridging Data Engineering & Business Analytics</h2>
+                    <p class="section-desc">Delivering actionable insights and robust data infrastructure for corporate
+                        decision-makers.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="card about-summary">
+                        <h3 style="font-size: 1.35rem; margin-bottom: 1rem; color: var(--accent-cyan);">Professional
+                            Profile
+                        </h3>
+                        <p>
+                            I am a Business Intelligence Developer and Data Analyst specializing in architecting
+                            end-to-end
+                            data processing pipelines, OLAP multidimensional cubes, and executive reporting systems.
+                        </p>
+                        <p>
+                            My professional track record includes leading BI transformations for major enterprises such
+                            as
+                            <strong>Gorkha Brewery (Carlsberg Nepal)</strong>, <strong>Agni Group</strong>, and
+                            enterprise
+                            web applications for the <strong>Civil Aviation Authority of Nepal (CAAN)</strong> and
+                            <strong>Triveni Group</strong>.
+                        </p>
+
+                        <ul class="highlight-list">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span><strong>ETL & Data Pipelines:</strong> Built SSIS & SQL Server pipelines
+                                    automating data flows.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span><strong>OLAP Multidimensional Modeling:</strong> Deployed SSAS cubes empowering
+                                    50+ business users.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span><strong>Power BI & DAX Mastery:</strong> Developed interactive dashboards
+                                    featuring RLS and complex DAX.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="competency-grid">
+                        <div class="competency-item">
+                            <div class="competency-icon">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <h4>Business Intelligence</h4>
+                            <p>Power BI, DAX, Power Query, SSAS OLAP Cubes, Jet Analytics, Advanced Excel, SSRS.
+                            </p>
+                        </div>
+
+                        <div class="competency-item">
+                            <div class="competency-icon">
+                                <i class="fa-solid fa-database"></i>
+                            </div>
+                            <h4>Data Engineering</h4>
+                            <p>SSIS, Apache Spark, SQL Server Stored Procedures, ETL/ELT Pipelines, Data Modeling.
+                            </p>
+                        </div>
+
+                        <div class="competency-item">
+                            <div class="competency-icon">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <h4>Advanced Analytics & ML</h4>
+                            <p>Python, XGBoost, ARIMA, 1D-CNN, BiGRU, Scikit-learn, Demand Forecasting.
+                            </p>
+                        </div>
+
+                        <div class="competency-item">
+                            <div class="competency-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h4>Enterprise Development</h4>
+                            <p>.NET, C#, REST APIs, ODATA, Database Tuning, Performance Optimization, Git.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: FEATURED PROJECTS PREVIEW -->
+        <section class="section snap-section" id="section-projects" style="background: rgba(15, 23, 42, 0.4);">
+            <div class="container">
+                <div class="section-head"
+                    style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <div class="section-tag"><i class="fa-solid fa-rocket"></i> Highlighted Analytics Work</div>
+                        <h2 class="section-title">Featured Enterprise & Research Projects</h2>
+                    </div>
+                    <a href="projects.html" class="btn btn-secondary" style="font-size: 0.9rem;">View All Projects <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="proj-grid">
+                    <!-- Project 1 -->
+                    <div class="proj-card">
+                        <div class="proj-header-banner">
+                            <i class="fa-solid fa-heart-pulse proj-icon-lg"></i>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-category">Data Engineering & Analytics</div>
+                            <h3 class="proj-title">CDC Chronic Disease Analysis</h3>
+                            <p class="proj-desc">Engineered an Apache Spark ETL pipeline to cleanse multi-year CDC
+                                health data and built interactive Power BI DAX dashboards visualizing disease
+                                correlations.</p>
+                            <div class="tech-tags" style="margin-bottom: 1rem;">
+                                <span class="tag">Apache Spark</span>
+                                <span class="tag tag-cyan">Power BI</span>
+                                <span class="tag tag-emerald">DAX</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="proj-footer">
+                                <a href="https://github.com/maheshsinghmadai" target="_blank" class="proj-link">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Spark + PowerBI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="proj-card">
+                        <div class="proj-header-banner">
+                            <i class="fa-solid fa-boxes-packing proj-icon-lg"></i>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-category">Predictive Analytics</div>
+                            <h3 class="proj-title">Inventory Demand Forecasting</h3>
+                            <p class="proj-desc">Developed an automated store sales demand forecasting model using
+                                Rossmann dataset with XGBoost & ARIMA, featuring a Streamlit UI for reorder points.</p>
+                            <div class="tech-tags" style="margin-bottom: 1rem;">
+                                <span class="tag">XGBoost</span>
+                                <span class="tag tag-cyan">ARIMA</span>
+                                <span class="tag tag-emerald">Streamlit</span>
+                                <span class="tag">Pandas</span>
+                            </div>
+                            <div class="proj-footer">
+                                <a href="https://github.com/maheshsinghmadai" target="_blank" class="proj-link">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="proj-card">
+                        <div class="proj-header-banner">
+                            <i class="fa-solid fa-building-user proj-icon-lg"></i>
+                        </div>
+                        <div class="proj-body">
+                            <div class="proj-category">Enterprise BI</div>
+                            <h3 class="proj-title">Carlsberg Nepal & Agni BI Transformation</h3>
+                            <p class="proj-desc">Architected end-to-end SSIS pipelines, SSAS OLAP multidimensional
+                                cubes, and automated Power BI reports for 50+ users across departments.</p>
+                            <div class="tech-tags" style="margin-bottom: 1rem;">
+                                <span class="tag">SSIS</span>
+                                <span class="tag tag-cyan">SSAS OLAP</span>
+                                <span class="tag tag-emerald">Power BI</span>
+                                <span class="tag">SQL Server</span>
+                            </div>
+                            <div class="proj-footer">
+                                <span class="proj-link" style="color: var(--accent-emerald);">
+                                    <i class="fa-solid fa-circle-check"></i> Production Deployed
+                                </span>
+                                <span style="font-size: 0.8rem; color: var(--text-muted);">Enterprise BI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: FOOTER SNAP -->
+        <section class="snap-section" id="section-footer" style="padding: 0; justify-content: flex-end;">
+            <div id="footer-placeholder" style="width: 100%;"></div>
+        </section>
+
     </div>
-</section>
 
-<div id="footer-placeholder"></div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

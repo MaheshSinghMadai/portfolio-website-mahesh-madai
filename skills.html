@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mahesh Singh Madai">
-    <title>Mahesh Singh Madai | Skills</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Technical skills matrix of Mahesh Singh Madai - Power BI, SSIS, SSAS OLAP Cubes, SQL Server, Apache Spark, Python, .NET, Machine Learning, Data Warehousing.">
+    <title>Mahesh Singh Madai | Technical Skills Matrix</title>
+    
+    <!-- Font Awesome 6 Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,86 +17,160 @@
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
+        <div class="section-head text-center" style="text-align: center; margin-bottom: 3rem;">
+            <div class="section-tag" style="justify-content: center;"><i class="fa-solid fa-layer-group"></i> Competency Matrix</div>
+            <h2 class="section-title">Technical Expertise & Tech Stack</h2>
+            <p class="section-desc" style="margin: 0.5rem auto 0;">Comprehensive breakdown of skills across Business Intelligence, Data Engineering, Databases, Software Engineering, and Machine Learning.</p>
+        </div>
 
-        <div class="card skills-compact">
-            <dl class="skills-dl">
+        <div class="skills-container">
 
-                <dt>Programming Languages</dt>
-                <dd>
-                    <span class="skill-item">C#</span>
-                    <span class="skill-item">Python</span>
-                    <span class="skill-item">T-SQL</span>
-                    <span class="skill-item">JavaScript</span>
-                </dd>
+            <!-- Category 1: BI & Visualization -->
+            <div class="skill-category-card">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="skill-cat-title">
+                        <h3>Business Intelligence</h3>
+                        <p>Analytics, OLAP & Executive Dashboards</p>
+                    </div>
+                </div>
 
-                <dt>Business Intelligence & Analytics</dt>
-                <dd>
-                    <span class="skill-item">Power BI</span>
-                    <span class="skill-item">SSAS / OLAP</span>
-                    <span class="skill-item">SSRS Reports</span>
-                    <span class="skill-item">DAX</span>
-                    <span class="skill-item">Data Warehousing</span>
-                </dd>
+                <div class="skill-items-wrap">
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Power BI (Desktop & Service)</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> DAX Modeling & Measures</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Power Query / M</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> SSAS Multidimensional Cubes</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> OLAP Data Architecture</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Row-Level Security (RLS)</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Jet Analytics</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Advanced Excel (Power Pivot)</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> SSRS Reporting</div>
+                </div>
+            </div>
 
-                <dt>ETL & Data Engineering</dt>
-                <dd>
-                    <span class="skill-item">SSIS</span>
-                    <span class="skill-item">Spark</span>
-                    <span class="skill-item">Apache Airflow</span>
-                    <span class="skill-item">Pandas</span>
-                    <span class="skill-item">Data Pipelines</span>
-                </dd>
+            <!-- Category 2: Data Engineering & ETL -->
+            <div class="skill-category-card">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <div class="skill-cat-title">
+                        <h3>Data Engineering</h3>
+                        <p>Pipelines, Warehousing & Big Data</p>
+                    </div>
+                </div>
 
-                <dt>Databases</dt>
-                <dd>
-                    <span class="skill-item">SQL Server</span>
-                    <span class="skill-item">PostgreSQL</span>
-                    <span class="skill-item">MongoDB</span>
-                    <span class="skill-item">Entity Framework</span>
-                    <span class="skill-item">Database Design</span>
-                </dd>
+                <div class="skill-items-wrap">
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> SSIS (Integration Services)</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> SQL Stored Procedures</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Apache Spark (PySpark)</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> ETL / ELT Architecture</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Data Warehousing</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Star / Snowflake Schema</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Data Cleansing & Validation</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Apache Airflow</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Data Pipelines Scheduling</div>
+                </div>
+            </div>
 
-                <dt>.NET & Web Development</dt>
-                <dd>
-                    <span class="skill-item">.NET Framework</span>
-                    <span class="skill-item">.NET Core</span>
-                    <span class="skill-item">ASP.NET</span>
-                    <span class="skill-item">REST APIs</span>
-                    <span class="skill-item">MVC</span>
-                    <span class="skill-item">HTML / CSS</span>
-                </dd>
+            <!-- Category 3: Databases & Performance -->
+            <div class="skill-category-card">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald);">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="skill-cat-title">
+                        <h3>Databases & Tuning</h3>
+                        <p>RDBMS, Cloud Warehouses & Optimization</p>
+                    </div>
+                </div>
 
-                <dt>Machine Learning & Analytics</dt>
-                <dd>
-                    <span class="skill-item">Machine Learning</span>
-                    <span class="skill-item">Deep Learning</span>
-                    <span class="skill-item">Scientific Python</span>
-                    <span class="skill-item">TensorFlow</span>
-                    <span class="skill-item">Scikit-learn</span>
-                    <span class="skill-item">Data Analysis</span>
-                </dd>
+                <div class="skill-items-wrap">
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> MS SQL Server</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> T-SQL Queries & Views</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Database Administration</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Performance Tuning</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Query Optimization</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Indexing Strategies</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Snowflake Warehouse</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> MySQL</div>
+                </div>
+            </div>
 
-                <dt>Tools & Platforms</dt>
-                <dd>
-                    <span class="skill-item">Visual Studio</span>
-                    <span class="skill-item">SQL Server Management Studio</span>
-                    <span class="skill-item">Git</span>
-                    <span class="skill-item">Azure</span>
-                    <span class="skill-item">Jira</span>
-                    <span class="skill-item">Excel</span>
-                </dd>
+            <!-- Category 4: Software Development -->
+            <div class="skill-category-card">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-amber);">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="skill-cat-title">
+                        <h3>Software Engineering</h3>
+                        <p>.NET, Web Apps & APIs</p>
+                    </div>
+                </div>
 
-                <dt>Domain Expertise</dt>
-                <dd>
-                    <span class="skill-item">Enterprise Systems</span>
-                    <span class="skill-item">HRMS Solutions</span>
-                    <span class="skill-item">Financial Services</span>
-                    <span class="skill-item">Data Governance</span>
-                    <span class="skill-item">Business Analysis</span>
-                </dd>
+                <div class="skill-items-wrap">
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> C# Programming</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> .NET / .NET Core</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> ASP.NET Web API</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Python</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> REST APIs & ODATA</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Angular</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> HTML5 / CSS3 / JavaScript</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Git & GitHub</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> AWS CloudFront CDN</div>
+                </div>
+            </div>
 
-            </dl>
+            <!-- Category 5: Machine Learning & Science -->
+            <div class="skill-category-card">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="skill-cat-title">
+                        <h3>Data Science & ML</h3>
+                        <p>Predictive Modeling & Deep Learning</p>
+                    </div>
+                </div>
+
+                <div class="skill-items-wrap">
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Machine Learning</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> XGBoost</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> ARIMA Time-Series</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Random Forest</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Deep Learning (1D-CNN)</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> BiGRU & ChronoNet</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Pandas & NumPy</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Scikit-learn</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Streamlit Interfaces</div>
+                </div>
+            </div>
+
+            <!-- Category 6: Domain & Enterprise Solutions -->
+            <div class="skill-category-card">
+                <div class="skill-cat-header">
+                    <div class="skill-cat-icon" style="background: rgba(99, 102, 241, 0.15); color: var(--accent-indigo);">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div class="skill-cat-title">
+                        <h3>Domain Knowledge</h3>
+                        <p>Enterprise Systems & Operations</p>
+                    </div>
+                </div>
+
+                <div class="skill-items-wrap">
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Enterprise HRMS Solutions</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Dealer Management (DMS)</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Brewery & FMCG Analytics</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Aviation & Public Sector Portals</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Inventory Demand Planning</div>
+                    <div class="skill-pill"><i class="fa-solid fa-check"></i> Self-Service BI Deployment</div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>

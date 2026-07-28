@@ -1,10 +1,30 @@
 <nav class="navbar">
-    <div class="container">
-        <div class="navbar-nav">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="experience.html" class="nav-link">Experience</a>
-            <a href="projects.html" class="nav-link">Projects</a>
-            <a href="skills.html" class="nav-link">Skills</a>
-        </div>
+    <div class="container nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-badge">&lt;MM/&gt;</span>
+            <span>Mahesh Singh Madai</span>
+        </a>
+
+        <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="navbar-nav" id="navbar-nav-list">
+            <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
+            <li><a href="experience.html" class="nav-link" data-page="experience.html">Experience</a></li>
+            <li><a href="projects.html" class="nav-link" data-page="projects.html">Projects</a></li>
+            <li><a href="skills.html" class="nav-link" data-page="skills.html">Skills</a></li>
+            <li>
+                <a href="mailto:maheshsinghmadai@gmail.com" class="nav-cta">
+                    <i class="fa-solid fa-paper-plane"></i> Contact
+                </a>
+            </li>
+            <li>
+                <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle theme"
+                    title="Toggle dark/light mode">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </li>
+        </ul>
     </div>
 </nav>

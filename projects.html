@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mahesh Singh Madai">
-    <title>Mahesh Singh Madai | Projects</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Portfolio of Business Intelligence, Data Engineering, and Machine Learning projects by Mahesh Singh Madai. CDC Spark Analysis, EEG Deep Learning, Inventory Forecasting, Carlsberg BI.">
+    <title>Mahesh Singh Madai | Analytics & BI Projects Showcase</title>
+    
+    <!-- Font Awesome 6 Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,80 +17,191 @@
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        
-        <div class="proj-grid">
-            <div class="proj-card">          
+        <div class="section-head text-center" style="text-align: center; margin-bottom: 2.5rem;">
+            <div class="section-tag" style="justify-content: center;"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</div>
+            <h2 class="section-title">Key Projects & Engineering Solutions</h2>
+            <p class="section-desc" style="margin: 0.5rem auto 0;">Explore my enterprise BI transformations, data pipelines, predictive analytics models, and full-stack software applications.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="bi"><i class="fa-solid fa-chart-line"></i> Business Intelligence</button>
+            <button class="filter-btn" data-filter="de"><i class="fa-solid fa-database"></i> Data Engineering</button>
+            <button class="filter-btn" data-filter="ml"><i class="fa-solid fa-brain"></i> Data Science & ML</button>
+            <button class="filter-btn" data-filter="software"><i class="fa-solid fa-code"></i> Enterprise Software</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="proj-grid" id="projects-grid">
+
+            <!-- Project 1: CDC Spark & PowerBI -->
+            <div class="proj-card" data-category="de">
+                <div class="proj-header-banner">
+                    <i class="fa-solid fa-notes-medical proj-icon-lg"></i>
+                </div>
                 <div class="proj-body">
-                    <h5 class="proj-title">CDC Chronic Disease Analysis</h5>
+                    <div class="proj-category">Data Engineering & Analytics</div>
+                    <h3 class="proj-title">CDC Chronic Disease Analysis with Spark & PowerBI</h3>
                     <p class="proj-desc">
-                        Engineered an Apache Spark ETL pipeline for analyzing multi-year CDC chronic disease trends with Power BI dashboards for visualization.
+                        Engineered an Apache Spark ETL pipeline to process and cleanse multi-year CDC chronic disease datasets. Built interactive Power BI dashboards with DAX to visualize key health indicators across demographic and geographic dimensions, deriving actionable correlations on disease prevalence.
                     </p>
-                    <p style="font-size: 12px; margin-bottom: 10px;">
-                        <strong>Tech:</strong> Spark, Power BI, DAX, Python
-                    </p>
+                    <div class="tech-tags" style="margin-bottom: 1.25rem;">
+                        <span class="tag">Apache Spark</span>
+                        <span class="tag tag-cyan">Power BI</span>
+                        <span class="tag tag-emerald">DAX</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">ETL Pipeline</span>
+                        <span class="tag tag-cyan">Data Cleansing</span>
+                    </div>
+                    <div class="proj-footer">
+                        <a href="https://github.com/maheshsinghmadai" target="_blank" class="proj-link">
+                            <i class="fa-brands fa-github"></i> GitHub Repository
+                        </a>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Spark + Power BI</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="proj-card">
+            <!-- Project 2: EEG Signal Processing -->
+            <div class="proj-card" data-category="ml">
+                <div class="proj-header-banner">
+                    <i class="fa-solid fa-brain proj-icon-lg" style="color: var(--accent-indigo);"></i>
+                </div>
                 <div class="proj-body">
-                    <h5 class="proj-title">EEG Signal Processing</h5>
+                    <div class="proj-category">Machine & Deep Learning</div>
+                    <h3 class="proj-title">EEG Signal Processing & Brain Signal Decoding</h3>
                     <p class="proj-desc">
-                        Motor imagery and epilepsy classification using advanced deep learning with ID-CNN and BiGRU architectures for medical signal analysis.
+                        Decoded brain signals for motor imagery classification by implementing Logistic Regression, 1D-CNN, BiGRU, and ChronoNet neural architectures. Built epilepsy classification using Random Forest and CNN models, conducting rigorous comparative evaluation of machine learning vs. deep learning approaches.
                     </p>
-                    <p style="font-size: 12px;  margin-bottom: 10px;">
-                        <strong>Tech:</strong> Python, Deep Learning, CNN, TensorFlow
-                    </p>
+                    <div class="tech-tags" style="margin-bottom: 1.25rem;">
+                        <span class="tag">1D-CNN</span>
+                        <span class="tag tag-cyan">BiGRU</span>
+                        <span class="tag tag-emerald">ChronoNet</span>
+                        <span class="tag">Random Forest</span>
+                        <span class="tag">Python</span>
+                        <span class="tag tag-cyan">Signal Processing</span>
+                    </div>
+                    <div class="proj-footer">
+                        <a href="https://github.com/maheshsinghmadai" target="_blank" class="proj-link">
+                            <i class="fa-brands fa-github"></i> GitHub Repository
+                        </a>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Medical AI</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="proj-card">          
+            <!-- Project 3: Inventory Optimization -->
+            <div class="proj-card" data-category="ml">
+                <div class="proj-header-banner">
+                    <i class="fa-solid fa-boxes-stacked proj-icon-lg" style="color: var(--accent-emerald);"></i>
+                </div>
                 <div class="proj-body">
-                    <h5 class="proj-title">Inventory Optimization</h5>
+                    <div class="proj-category">Predictive Analytics & Forecasting</div>
+                    <h3 class="proj-title">Inventory Optimization via Sales Forecasting</h3>
                     <p class="proj-desc">
-                        Demand forecasting system using XGBoost and ARIMA for inventory management with Streamlit web interface for visualization.
+                        Developed a demand forecasting solution utilizing Rossmann Store Sales data to optimize stock levels and prevent overstocking. Evaluated and tuned XGBoost and ARIMA time-series models, deploying a Streamlit web application for visual sales trend tracking and dynamic reorder point calculations.
                     </p>
-                    <p style="font-size: 12px; margin-bottom: 10px;">
-                        <strong>Tech:</strong> XGBoost, ARIMA, Streamlit, Pandas
-                    </p>
+                    <div class="tech-tags" style="margin-bottom: 1.25rem;">
+                        <span class="tag">XGBoost</span>
+                        <span class="tag tag-cyan">ARIMA</span>
+                        <span class="tag tag-emerald">Streamlit</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Time-Series</span>
+                        <span class="tag tag-cyan">Inventory Optimization</span>
+                    </div>
+                    <div class="proj-footer">
+                        <a href="https://github.com/maheshsinghmadai" target="_blank" class="proj-link">
+                            <i class="fa-brands fa-github"></i> GitHub Repository
+                        </a>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Streamlit App</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="proj-card">             
+            <!-- Project 4: Carlsberg Nepal & Agni BI -->
+            <div class="proj-card" data-category="bi">
+                <div class="proj-header-banner">
+                    <i class="fa-solid fa-chart-column proj-icon-lg" style="color: var(--accent-amber);"></i>
+                </div>
                 <div class="proj-body">
-                    <h5 class="proj-title">Power BI Analytics Dashboard</h5>
+                    <div class="proj-category">Business Intelligence</div>
+                    <h3 class="proj-title">Gorkha Brewery (Carlsberg Nepal) BI Transformation</h3>
                     <p class="proj-desc">
-                        Enterprise analytics dashboard built for financial services company with real-time data refresh, complex DAX calculations, and interactive reports.
+                        Led the end-to-end BI transformation for Gorkha Brewery and Agni Group. Designed SSIS pipelines, deployed SSAS multidimensional OLAP cubes for 50+ users, and built Power BI dashboards with DAX modeling and row-level security (RLS) to replace legacy Excel reporting.
                     </p>
-                    <p style="font-size: 12px; margin-bottom: 10px;">
-                        <strong>Tech:</strong> Power BI, SQL Server, DAX, SSAS
-                    </p>
+                    <div class="tech-tags" style="margin-bottom: 1.25rem;">
+                        <span class="tag">Power BI</span>
+                        <span class="tag tag-cyan">SSAS OLAP</span>
+                        <span class="tag tag-emerald">SSIS Pipelines</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Jet Analytics</span>
+                        <span class="tag tag-cyan">Row-Level Security</span>
+                    </div>
+                    <div class="proj-footer">
+                        <span class="proj-link" style="color: var(--accent-emerald);">
+                            <i class="fa-solid fa-circle-check"></i> Production Client BI
+                        </span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Enterprise BI</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="proj-card">            
+            <!-- Project 5: CAAN HRMS Portal -->
+            <div class="proj-card" data-category="software">
+                <div class="proj-header-banner">
+                    <i class="fa-solid fa-plane-arrival proj-icon-lg"></i>
+                </div>
                 <div class="proj-body">
-                    <h5 class="proj-title">Enterprise Data Warehouse</h5>
+                    <div class="proj-category">Enterprise Software</div>
+                    <h3 class="proj-title">CAAN Enterprise HRMS & Portal Solutions</h3>
                     <p class="proj-desc">
-                        Designed and implemented enterprise data warehouse using SQL Server with SSIS ETL pipelines for multi-source data integration and cleansing.
+                        Architected and deployed HRMS portals for the Civil Aviation Authority of Nepal (CAAN) serving 1500+ employees across airports and offices. Streamlined attendance, leave workflows, and banking HR modules using clean architecture .NET Core and SQL Server.
                     </p>
-                    <p style="font-size: 12px; margin-bottom: 10px;">
-                        <strong>Tech:</strong> SQL Server, SSIS, SSAS, T-SQL
-                    </p>
+                    <div class="tech-tags" style="margin-bottom: 1.25rem;">
+                        <span class="tag">.NET Core</span>
+                        <span class="tag tag-cyan">C#</span>
+                        <span class="tag tag-emerald">SQL Server</span>
+                        <span class="tag">Enterprise HRMS</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag tag-cyan">FIDS System</span>
+                    </div>
+                    <div class="proj-footer">
+                        <span class="proj-link" style="color: var(--accent-emerald);">
+                            <i class="fa-solid fa-circle-check"></i> Enterprise Deployed
+                        </span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">1500+ Active Users</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="proj-card">
+            <!-- Project 6: Triveni Group DMS -->
+            <div class="proj-card" data-category="software">
+                <div class="proj-header-banner">
+                    <i class="fa-solid fa-truck-ramp-box proj-icon-lg" style="color: var(--accent-cyan);"></i>
+                </div>
                 <div class="proj-body">
-                    <h5 class="proj-title">HRMS Portal</h5>
+                    <div class="proj-category">Enterprise Software</div>
+                    <h3 class="proj-title">Triveni Group Dealer Management System (DMS)</h3>
                     <p class="proj-desc">
-                        Full-stack HRMS portal serving 1500+ employees with employee management, payroll integration, and self-service features built with .NET and C#.
+                        Engineered custom Dealer Management System (DMS) modules for Triveni Group, delivering tailored workflow enhancements that significantly boosted supply chain and dealer ordering efficiency.
                     </p>
-                    <p style="font-size: 12px;  margin-bottom: 10px;">
-                        <strong>Tech:</strong> .NET, C#, SQL Server, REST APIs
-                    </p>
+                    <div class="tech-tags" style="margin-bottom: 1.25rem;">
+                        <span class="tag">.NET</span>
+                        <span class="tag tag-cyan">C#</span>
+                        <span class="tag tag-emerald">ODATA</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Supply Chain DMS</span>
+                    </div>
+                    <div class="proj-footer">
+                        <span class="proj-link" style="color: var(--accent-emerald);">
+                            <i class="fa-solid fa-circle-check"></i> Enterprise Deployed
+                        </span>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">Dealer System</span>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

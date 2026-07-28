@@ -63,19 +63,45 @@ function highlightActiveNav() {
 function setupMobileNav() {
     const toggleBtn = document.getElementById('nav-toggle-btn');
     const navList = document.getElementById('navbar-nav-list');
-    if (toggleBtn && navList) {
-        toggleBtn.addEventListener('click', () => {
-            navList.classList.toggle('show');
-            const icon = toggleBtn.querySelector('i');
-            if (icon) {
-                if (navList.classList.contains('show')) {
-                    icon.className = 'fa-solid fa-xmark';
-                } else {
-                    icon.className = 'fa-solid fa-bars';
-                }
+    const navbar = document.querySelector('.navbar');
+
+    if (!toggleBtn || !navList) return;
+
+    const closeNav = () => {
+        navList.classList.remove('show');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) {
+            icon.className = 'fa-solid fa-bars';
+        }
+    };
+
+    toggleBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navList.classList.toggle('show');
+        const icon = toggleBtn.querySelector('i');
+        if (icon) {
+            if (navList.classList.contains('show')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars';
             }
+        }
+    });
+
+    // Close mobile nav when clicking a link or CTA button
+    const navItems = navList.querySelectorAll('a, button:not(#theme-toggle-btn)');
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            closeNav();
         });
-    }
+    });
+
+    // Close mobile nav when clicking outside navbar
+    document.addEventListener('click', (e) => {
+        if (navbar && !navbar.contains(e.target) && navList.classList.contains('show')) {
+            closeNav();
+        }
+    });
 }
 
 // Animate numbers for stats highlights

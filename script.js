@@ -219,11 +219,25 @@ function initScrollSnapDots() {
     if (dots.length === 0 || sections.length === 0) return;
 
     dots.forEach(dot => {
-        dot.addEventListener('click', () => {
+        dot.addEventListener('click', (e) => {
+            e.preventDefault();
             const targetId = dot.getAttribute('data-target');
             const targetEl = document.getElementById(targetId);
             if (targetEl) {
-                targetEl.scrollIntoView({ behavior: 'smooth' });
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // Smooth scroll for internal hero action buttons if scrolling inside snap container
+    const heroButtons = document.querySelectorAll('.hero-actions a[href^="#"]');
+    heroButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const targetId = btn.getAttribute('href').substring(1);
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+                e.preventDefault();
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
     });
